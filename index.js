@@ -159,15 +159,21 @@ const controlMap = {
 		1: {
 			12: (ctrl, value) => ctrl.button.A.setValue(value > 64),
 			11: (ctrl, value) => ctrl.button.B.setValue(value > 64),
-			27: (ctrl, value) => ctrl.button.RIGHT_SHOULDER.setValue(value > 64),
-			109: (ctrl, value) => ctrl.button.LEFT_SHOULDER.setValue(value > 64),
+			// 27: (ctrl, value) => ctrl.button.RIGHT_SHOULDER.setValue(value > 64),
+			// 109: (ctrl, value) => ctrl.button.LEFT_SHOULDER.setValue(value > 64),
+			63: (ctrl, value) => ctrl.button.RIGHT_SHOULDER.setValue(value > 64),
 			84: (ctrl, value) => ctrl.button.START.setValue(value > 64),
 		},
 		0: {
 			12: (ctrl, value) => ctrl.button.X.setValue(value > 64),
 			11: (ctrl, value) => ctrl.button.Y.setValue(value > 64),
 			84: (ctrl, value) => ctrl.button.BACK.setValue(value > 64),
-		}
+			63: (ctrl, value) => ctrl.button.LEFT_SHOULDER.setValue(value > 64),
+		},
+		4: {
+			74: (ctrl, value) => ctrl.button.LEFT_SHOULDER.setValue(value > 64),
+			75: (ctrl, value) => ctrl.button.RIGHT_SHOULDER.setValue(value > 64),
+		},
 	},
 };
 
